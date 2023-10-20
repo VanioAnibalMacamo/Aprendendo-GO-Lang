@@ -1,7 +1,16 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
+
+var a string
 
 func main() {
-	fmt.Println("Hello, World!")
+	resultado := soma(1, 1)
+	fmt.Printf("%T", resultado)
+}
+
+func soma(a int, b int) int {
+	return a + b
 }
